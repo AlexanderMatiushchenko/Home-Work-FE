@@ -22,13 +22,13 @@ console.log(result);
 
 // 1. Написать функцию, которая получает один аргумент (массив целых чисел) и возвращает сумму положительных элементов.
 function positive(numbers) {
-  let num = [];
+  let sum = 0;
   for (let i = 0; i < numbers.length; i++) {
     if (numbers[i] > 0) {
-      num.push(numbers[i]);
+      sum += numbers[i];
     }
   }
-  return num;
+  return sum;
 }
 const numbers = [3, 4, 5, 10, -2, -3, 1 - 10];
 const result2 = positive(numbers);
