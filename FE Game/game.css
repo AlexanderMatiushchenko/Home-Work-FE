@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(https://pobedarf.ru/wp-content/uploads/2021/02/1zoom.ru_-scaled.jpg);
+  background-size: cover;
+}
+.button {
+  background-color: aqua;
+  border: solid white;
+  border-radius: 10px;
+  width: 100px;
+  height: 100px;
+  margin-top: 3%;
+  margin-left: 45%;
+}
+#area {
+  background-image: url(https://cvj.ch/wp-content/uploads/2022/02/CVJ.CH-Cosmos-ATOM.jpg);
+  width: 600px;
+  background-size: cover;
+  aspect-ratio: 1;
+  margin-top: 5%;
+  margin-left: 30%;
+  overflow: hidden;
+  border: solid 10px white;
+  border-radius: 20px;
+}
+#playground {
+  cursor: url(https://www.pngmart.com/files/16/Realistic-Rocket-Clipart-PNG-Transparent-Image.png),
+    auto;
+}
+
+#object {
+  background-image: url(https://cdn-icons-png.flaticon.com/512/7930/7930378.png);
+  background-size: cover;
+  width: 80px;
+  aspect-ratio: 1;
+  transform: translateY(-100%);
+  position: relative;
+  cursor: url(https://www.pngmart.com/files/16/Realistic-Rocket-Clipart-PNG-Transparent-Image.png),
+    auto;
+}
+#object.start {
+  animation-name: movement;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes movement {
+  to {
+    transform: translateY(600px);
+  }
+}
